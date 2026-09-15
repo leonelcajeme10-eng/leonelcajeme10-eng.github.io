@@ -1,1 +1,305 @@
-<h1>Hola, este es mi sitio</h1>.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Quesitos de la Ficción</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #f59e0b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .top-container {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .quesito-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .quesito-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.2);
+        }
+
+        .rank {
+            background-color: var(--accent-color);
+            color: #000;
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 60px;
+            padding: 1rem;
+        }
+
+        .img-container {
+            width: 200px;
+            min-width: 200px;
+            height: 200px;
+            background-color: #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-placeholder {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .info {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info .origin {
+            color: var(--accent-color);
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .info .description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 600px) {
+            .quesito-card {
+                flex-direction: column;
+            }
+
+            .rank {
+                width: 100%;
+                padding: 0.5rem;
+            }
+
+            .img-container {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Top 10 Quesitos de la Ficción</h1>
+        <p>Mi selección definitiva de los mejores quesitos del anime, videojuegos y novelas.</p>
+    </header>
+
+    <main class="top-container">
+
+        <!-- Quesito 1 -->
+        <article class="quesito-card">
+            <div class="rank">#1</div>
+            <div class="img-container">
+                <img src="beatrice.jpg" alt="Beatrice" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de Beatrice</div>
+            </div>
+            <div class="info">
+                <h2>Beatrice</h2>
+                <div class="origin">Umineko When They Cry</div>
+                <p class="description">La Bruja Dorada. Un quesito inolvidable por su carisma, su risa icónica y la enorme complejidad de su trasfondo en el juego del ingenio.</p>
+            </div>
+        </article>
+
+        <!-- Quesito 2 -->
+        <article class="quesito-card">
+            <div class="rank">#2</div>
+            <div class="img-container">
+                <img src="mythra.jpg" alt="Mythra" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de Mythra</div>
+            </div>
+            <div class="info">
+                <h2>Mythra</h2>
+                <div class="origin">Xenoblade Chronicles 2</div>
+                <p class="description">La Aegis de luz. Un quesito con un diseño espectacular, un poder abrumador y un desarrollo emocional clave a lo largo de la saga.</p>
+            </div>
+        </article>
+
+        <!-- Quesito 3 -->
+        <article class="quesito-card">
+            <div class="rank">#3</div>
+            <div class="img-container">
+                <img src="maya_fey.jpg" alt="Maya Fey" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de Mia Fey</div>
+            </div>
+            <div class="info">
+                <h2>Maya Fey</h2>
+                <div class="origin">Ace Attorney</div>
+                <p class="description">La mentora legendaria. Excelente abogada defensora, un quesito elegante, inteligente y la guía fundamental en los momentos más difíciles.</p>
+            </div>
+        </article>
+
+        <!-- Quesito 4 -->
+        <article class="quesito-card">
+            <div class="rank">#4</div>
+            <div class="img-container">
+                <img src="primrose.jpg" alt="Primrose Azelhart" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de Primrose Azelhart</div>
+            </div>
+            <div class="info">
+                <h2>Primrose Azelhart</h2>
+                <div class="origin">Octopath Traveler</div>
+                <p class="description">Un quesito bailarina con una de las historias de venganza y determinación más oscuras y cautivadoras en los JRPG modernos.</p>
+            </div>
+        </article>
+
+        <!-- Quesito 5 -->
+        <article class="quesito-card">
+            <div class="rank">#5</div>
+            <div class="img-container">
+                <img src="2b.jpg" alt="2B" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de 2B</div>
+            </div>
+            <div class="info">
+                <h2>2B (YoRHa No.2 Type B)</h2>
+                <div class="origin">NieR: Automata</div>
+                <p class="description">Un quesito androide con un diseño estético impecable, combates magistrales y una carga existencial que define su narrativa.</p>
+            </div>
+        </article>
+
+        <!-- Quesito 6 -->
+        <article class="quesito-card">
+            <div class="rank">#6</div>
+            <div class="img-container">
+                <img src="makise_kurisu.jpg" alt="Makise Kurisu" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de Makise Kurisu</div>
+            </div>
+            <div class="info">
+                <h2>Makise Kurisu</h2>
+                <div class="origin">Steins;Gate</div>
+                <p class="description">La brillante investigadora apodada "Christina". Un quesito tsundere sumamente inteligente que se gana el corazón de todos con su lealtad.</p>
+            </div>
+        </article>
+
+        <!-- Quesito 7 -->
+        <article class="quesito-card">
+            <div class="rank">#7</div>
+            <div class="img-container">
+                <img src="yor_forger.jpg" alt="Yor Forger" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de Yor Forger</div>
+            </div>
+            <div class="info">
+                <h2>Yor Forger</h2>
+                <div class="origin">Spy x Family</div>
+                <p class="description">La Princesa de las Espinas. Un quesito adorable e ingenuo en su vida cotidiana, pero una asesina letal e imponente cuando entra en acción.</p>
+            </div>
+        </article>
+
+        <!-- Quesito 8 -->
+        <article class="quesito-card">
+            <div class="rank">#8</div>
+            <div class="img-container">
+                <img src="ryuko_matoi.jpg" alt="Ryuko Matoi" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de Ryuko Matoi</div>
+            </div>
+            <div class="info">
+                <h2>Ryuko Matoi</h2>
+                <div class="origin">Kill la Kill</div>
+                <p class="description">Un quesito rebelde y temperamental que destaca por su diseño audaz, su actitud combativa y su tijera gigante.</p>
+            </div>
+        </article>
+
+        <!-- Quesito 9 -->
+        <article class="quesito-card">
+            <div class="rank">#9</div>
+            <div class="img-container">
+                <img src="tifa_lockhart.jpg" alt="Tifa Lockhart" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de Tifa Lockhart</div>
+            </div>
+            <div class="info">
+                <h2>Tifa Lockhart</h2>
+                <div class="origin">Final Fantasy VII</div>
+                <p class="description">Un quesito clásico e icónico del mundo del videojuego, caracterizada por su fuerza en combate cuerpo a cuerpo y su personalidad empática.</p>
+            </div>
+        </article>
+
+        <!-- Quesito 10 -->
+        <article class="quesito-card">
+            <div class="rank">#10</div>
+            <div class="img-container">
+                <img src="miku_nakano.jpg" alt="Miku Nakano" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="img-placeholder" style="display:none;">Imagen de Miku Nakano</div>
+            </div>
+            <div class="info">
+                <h2>Miku Nakano</h2>
+                <div class="origin">The Quintessential Quintuplets</div>
+                <p class="description">Un quesito reservado, fanática de la historia japonesa, cuyo crecimiento personal y ternura la volvieron una de las favoritas de la serie.</p>
+            </div>
+        </article>
+
+    </main>
+
+</body>
+</html>
